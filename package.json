@@ -1,0 +1,17 @@
+{
+  "name": "prompt-sidekick",
+  "version": "1.0.0",
+  "description": "🏄‍♂️ PROMPT SIDEKICK - AI-powered browser extension landing page",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "destroy": "aws cloudformation delete-stack --stack-name prompt-sidekick-v2",
+    "status": "aws cloudformation describe-stacks --stack-name prompt-sidekick-v2",
+    "outputs": "aws cloudformation describe-stacks --stack-name prompt-sidekick-v2 --query 'Stacks[0].Outputs'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItziarOli/prompt-sidekick.git"
+  },
+  "author": "ItziarOli",
+  "license": "MIT"
+}
